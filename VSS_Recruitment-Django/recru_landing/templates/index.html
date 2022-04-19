@@ -1,0 +1,418 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <title></title>
+    {% include "top.html" %}
+
+    <style>
+      #file {
+      background-color:#8435C2;
+      color: white;
+      padding: 3px 11px;
+      font-family: sans-serif;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      margin-top:10px;
+      font-size: 15px;
+      margin-left: -35px;
+      width: 100px;
+
+    }
+
+    #file-chosen{
+      margin-left: 0.3rem;
+      font-family: sans-serif;
+      color: #efefef;
+      font-size: 13px;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+      .vss-icons-leftt {
+        left: -90px !important;
+      }
+      .debug-bg {
+        background-color: pink;
+      }
+      /* .masthead h2 {
+        font-size: 15px !important;
+      } */
+      .masthead-h2-left {
+        font-size: 30px !important;
+        font-family: Coolvetica-regular;
+        color: #FFF;
+        margin-left: 60px;
+      }
+      .masthead-h3-left {
+        font-family: Coolvetica-regular;
+        color: #fff !important;
+        font-size: 15px;
+      }
+      .masthead-h3-left-deserve {
+        font-family: Coolvetica-regular;
+        color: #fff !important;
+        font-size: 20px;
+      }
+      .masthead-h3-form {
+        font-family: Coolvetica-regular !important;
+        color: #fff !important;
+        font-size: 43px !important;
+        margin-left: -40px !important;
+      }
+    }
+    @media screen and (min-width: 601px) {
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+      .vss-icons-left {
+        left: 90px !important;
+        /* padding-left: 90px; */
+      }
+      /* .debug-bg {
+        background-image: url("{% static 'images/blackBG.png'%}");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+      } */
+      .debug-bg {
+        background-color: blue;
+      }
+      .masthead-h2-left {
+        font-size: 53px !important;
+        font-family: Coolvetica-regular;
+        color: #FFF;
+        margin-left: 60px;
+      }
+      /* .masthead h3 {
+        font-size: 15px !important;
+      } */
+      .masthead-h3-left {
+        Coolvetica-regular;
+        color: #fff !important;
+        font-size: 28px;
+      }
+      .masthead-h3-left-deserve {
+        font-family: Coolvetica-regular;
+        color: #fff !important;
+        font-size: 45px;
+      }
+      .masthead-h3-form {
+        font-family: Coolvetica-regular !important;
+        color: #fff !important;
+        font-size: 43px !important;
+        margin-left: -40px !important;
+      }
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 1st Section containing girl in orange shirt and application form -->
+    <div class="container-fluid debug-bg">
+      <div class="first-section row">
+        <section class="section-landing">
+          <header class="masthead">
+
+          <nav class="navbar navbar-expand-sm" style="margin-left: 50px; margin-right:60px">
+            <a class="navbar-brand" href="#page-top"><img src="/static/images/bgtrans.png" width="160" height="80"  style="margin-right: 15px; "class="d-inline-block align-center " alt=""> <img src="/static/images/b1.png" width="160" height="80"  style="margin-right: 15px"class="d-inline-block align-center " alt=""> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Jobs" aria-label="Search" style="width: 300px;color: #fff;background-color: transparent; border-radius: 20px; border-width: 2px; border-color: #fff;">
+                <div class="material-icons" style="font-size: 40px; color: #fff">
+                  account_circle
+                </div>
+              </form>
+            </div>
+          </nav>
+
+            <div class="container-fluid h-75 justify-content-center align-items-center" style="margin-top: 20px;">
+              <div class="row h-100 align-items-start justify-content-start text-left">
+                <div class="col-md-7 col-7 align-self-center page-title">
+                  <h2 class="mb-1 masthead-h2-left">Fulfill your personal</h2>
+                  <!-- <h2 class="mb-1 masthead-h2" style="font-family: Coolvetica-regular; color: white; margin-left: 60px;">Fullfil your personal</h2> -->
+                  <h2 class="mb-1 masthead-h2-left">career checklist now!</h2>
+                  <!-- <h2 class="mb-1 masthead-h2" style="font-family: Coolvetica-regular; color: white; margin-left: 60px;">career checklist now!</h2> -->
+
+                  <br/>
+
+                  <div class="list-inline">
+                    <span style="display: inline-block; margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px; background-color: #fff; border-radius: 55px;"></i>  Competitive Salary</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block; margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i>  Rapid Career Development</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block; margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Extended Healthcare</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block; margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Leadership Training</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block;  margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Rewards and Recognition</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block;  margin-left: 60px;">
+                      <h3 class="masthead-h3-left">
+                        <i class="fa-solid fa-circle-check" style="color: #0cb904; font-size: 25px;background-color: #fff; border-radius: 55px;"></i> Work Life Balance</h3>
+                    </span>
+                  </div>
+                  <div class="list-inline" style="margin-top: 10px">
+                    <span style="display: inline-block;  margin-left: 60px;">
+                      <h3 class="masthead-h3-left-deserve">
+                        #YouDeserveMore</h3>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-5 col-5 align-self-center page-title">
+                  <div class="row">
+                    <div class="border" style="width: 365px;height: 475px; margin-left: 140px; margin-top: 10px;">
+
+                        <form action="" style="background-color: #191919;border-radius:10px;padding:70px;height: 100%;">
+                          <!-- <div class="row"> -->
+                          <div class="list-inline" style="margin-top: -65px">
+                            <span>
+                              <h3 class="masthead-h3-form">
+                                Start your</h3>
+                              </span>
+                              <span>
+                                <h3 class="masthead-h3-form" style="width:1000px; margin-top: -15px;">
+                                  career with us!</h3>
+                                </span>
+                              </div>
+
+                              <input class="form-control form-control" type="text" placeholder="First Name" style="background-color:#0D0D0D; margin-bottom: 5px; border-color: transparent; width: 295px; margin-left: -40px;  margin-top: 10px; color: #E5E5E5">
+                              <input class="form-control form-control" type="text" placeholder="Last Name" style="background-color:#0D0D0D; margin-bottom: 10px; border-color: transparent; width: 295px; margin-left: -40px;  margin-top: 10px; color: #E5E5E5">
+                              <input class="form-control form-control" type="text" placeholder="Email Address" style="background-color:#0D0D0D; margin-bottom: 10px;border-color: transparent;width: 295px; margin-left: -40px; color: #E5E5E5">
+                              <input class="form-control form-control" type="text" placeholder="Mobile Number"style="background-color:#0D0D0D; margin-bottom: 7px;border-color: transparent;width: 295px; margin-left: -40px; color: #E5E5E5">
+
+                              <label for="" style="color:#fff; margin-left: -35px; font-size: 15px;">Do you have call center experience?</label><br>
+                              <div class="form-check form-check-inline" style="margin-left: -55px">
+                                <input class="form-check-input" type="checkbox" id="yes" value="option1" style="margin-left:0px; background-color: #0D0D0D; margin-top:4px;">
+                                <label class="form-check-label" for="yes" style="color:#fff; margin-left:5px; margin-top:-20px;">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="no" value="option2" style="margin-left: -10px; background-color: #0D0D0D; margin-top:4px;">
+                                <label class="form-check-label" for="no" style="color:#fff;">No</label>
+                              </div><br>
+                              <!-- actual upload which is hidden -->
+                              <input type="file" id="actual-btn" hidden/>
+
+                              <!-- our custom upload button -->
+                              <label id="file" for="actual-btn">Upload CV</label>
+
+                              <!-- name of file chosen -->
+                              <span id="file-chosen">No file chosen</span>
+
+                              <button type="button" class="btn hover-btn apply-now-btn">Apply Now!</button>
+
+                              <!-- </div> -->
+                            </form>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </section>
+      </div>
+
+      <!-- 2nd section containing flying girl in white shirt, VSS perks and programs -->
+      <div class="second-section row">
+        <section class="section-bg section-landing" style="padding-bottom: 30px;">
+          <div class="row container-fluid" style="justify-content: space-between; padding-top: 30px; padding-right: 75px; padding-left: 75px; padding-bottom: 20px;">
+            <div class="col-md-6 col-6">
+              <h1>Enjoy these perks and programs as a VSS Employee!</h1>
+            </div>
+            <div class="row" style="justify-content: space-between">
+              <div class="col-md-6 col-6">
+                <button href="#" class="btn font-p btn-second-section-apply-now" id="hov">Apply Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="row container-fluid">
+            <!-- <div class="row "> -->
+              <div class="col-md-6 col-6" style="text-align:center;">
+              </div>
+              <div class="col-md-6 col-6" style="left: 90px;">
+                <div class="row" style="padding: 8px; margin-left: -1px;">
+                  <div class="card">
+                    <img src="{% static 'frontend/img/vssicons/vsscares.png' %}" alt="VSSCares" style="height: 72px;">
+                    <p class="font-p" style="text-align: center; padding-top: 20px;">
+                      <span style="color: #80CC6B">Healthcare Benefits</span><br/>
+                      for Employees and <br/>
+                      their family
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 10px;">
+                    <img src="{% static 'frontend/img/vssicons/vssgives.png' %}" alt="VSSCares">
+                    <p class="font-p" style="text-align: center; padding-top: 20px;">
+                      Increasing, <br/>
+                      <span style="color: #75D7F4">Tenure Based</span> <br/>
+                      Compensation
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 10px;">
+                    <img src="{% static 'frontend/img/vssicons/vssacademy.png' %}" alt="VSS Cares" style="height: 56.4px">
+                    <p class="font-p" style="text-align: center; margin-top: 15px; padding-top: 10px;">
+                      Training and <br/>
+                      Organizational <br/>
+                      <span style="color: #F8CF5F">Development</span> <br/>
+                      <span style="color: #F8CF5F">Management</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row" style="padding: 8px; margin-left: -1px;">
+                  <div class="card">
+                    <img src="{% static 'frontend/img/vssicons/vssrewards.png' %}" alt="VSS Rewards" style="height: 45px">
+                    <p class="font-p" style="text-align: center; padding-top: 20px;">
+                      Branding and <br/>
+                      <span style="color: #FD6161">Merchandise Store</span><br/>
+                      Everyday Kudos
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 9px;">
+                    <img src="{% static 'frontend/img/vssicons/vssshares.png' %}" alt="VSS Shares" style="height: 56px">
+                    <p class="font-p" style="text-align: center; margin-top: 15px">
+                      <span style="color: #8435C2">Community Service</span><br/>
+                      and Interaction <br/>
+                      giving back<br/>
+                      to the community
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 10px;">
+                    <img src="{% static 'frontend/img/vssicons/nexus.png' %}" alt="Nexus" style="height: 52px">
+                    <p class="font-p" style="text-align: center; margin-top: 15px">
+                      Employee Portal <br/>
+                      and <span style="color: #80CC6B">Performance</span> <br/>
+                      <span style="color: #80CC6B">Management</span> <br/>
+                      <span style="color: #80CC6B">Dashboard</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row" style="padding: 8px;margin-left: -1px;">
+                  <div class="card">
+                    <img src="{% static 'frontend/img/vssicons/vssrockstar.png' %}" alt="VSS Rockstar" style="height: 70px">
+                    <p class="font-p" style="text-align: center; padding-top: 20px;">
+                      <span style="color: #80CC6B">VIP Recognition</span><br/>
+                      for our top <br/>
+                      performers
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 10px;">
+                    <img src="{% static 'frontend/img/vssicons/vsscasalami.png' %}" alt="VSS CasaLami" style="height: 42px">
+                    <p class="font-p" style="text-align: center; padding-top: 35px;">
+                      Providing <span style="color: #75D7F4">healthy</span> <br/>
+                      <span style="color: #75D7F4">Food options</span> for the<br/>
+                      employees during the<br/>
+                      night shift
+                    </p>
+                  </div>
+                  <div class="card" style="margin-left: 10px;">
+                    <img src="{% static 'frontend/img/vssicons/vssequity.png' %}" alt="VSS Equity" style="height: 65px">
+                    <p class="font-p" style="text-align: center; margin-top: 15px">
+                      <span style="color: #F8CF5F">Employees become</span> <br/>
+                      <span style="color: #F8CF5F">stakeholders</span> of the<br/>
+                      company, investing in<br/>
+                      their career and future<br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+
+      <!-- 3rd section containing carousel with images -->
+      <div class="third-section">
+        <section class="slider-section">
+          <div class="carousel slide row">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active" style="background-image: url('/static/frontend/img/carousel_image/vsscares0.png');">
+              </div> <!-- End of Carousel Item -->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 4th section containing Google Maps API -->
+      <div class="fourth-section row">
+        <section class="section-landing">
+          <div id="map"></div>
+        </section>
+      </div>
+
+      <!-- Footer containing companies address and contacts -->
+      <footer class="row">
+        <div class="section-bg section-landing" style="width: 100%">
+          <div class="" style="padding: 20px; padding-left: 80px; padding-bottom: 30px;">
+            <img src="{% static 'images/bgtrans.png' %}" alt="Virtual Staffing Solutions" style="height: 90.5px; width: 200px;">
+            <div class="footer-details">
+              <br/>
+              <p>+1-844-877-7267</p>
+              <p>177 Hunington Avenue #1700</p>
+              <p>Boston, MA 02115</p>
+              <br/>
+              <p>2nd & 3rd Floor Chinatown East Gate,</p>
+              <div class="row" style="align-content: center; justify-content: space-between; padding-left: 15px; padding-right: 40px;">
+                <p>Lilia Avenue, Brgy. Cogon, Ormoc City,</p>
+              </div>
+              <div class="row" style="align-content: center; justify-content: space-between; padding-left: 15px; padding-right: 80px;">
+                <p>Leyte, Philippines 6541</p>
+                <p style="float: right;">Copyright &copy; Virtual Staffing Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    {% include "bottom.html" %}
+
+    <script type="text/javascript">
+      const actualBtn = document.getElementById('actual-btn');
+      const fileChosen = document.getElementById('file-chosen');
+      actualBtn.addEventListener('change', function(){
+        fileChosen.textContent = this.files[0].name
+      })
+    </script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>
